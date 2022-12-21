@@ -1,7 +1,7 @@
 ####################################################################################################
 #日志名称：  QuantumultX TF Update Log
 #日志作者：  @Cuttlefish, @kyle, @ddgksf2013
-#更新时间：  2022-10-25
+#更新时间：  2022-12-21
 #微信账号：  公众号墨鱼手记
 #使用说明：  可全局搜索🔍关键词
 #后续更新：  随Testflight陆续更新…
@@ -10,6 +10,30 @@
 #日志地址：  https://github.com/ddgksf2013/Profile/raw/master/QX_TestFlight_Update.log
 ##################################################################################################
 
+
+1.2.0 (776) 
+- 应用主页增加显示当前活跃（还未调用 $done）的 JS 数量。如因脚本条件判断不全或脚本未正确处理异常导致 $done 未调用而使 JS 环境长时间活跃，可点击强制结束以释放内存等相关资源。
+
+注：
+1、用户可在脚本中使用 setTimeout $done 的方式来控制单个脚本超时；
+2、用户可通过 setTimeout 的方式来在脚本中模拟 cron task 功能，使一次性脚本长时间运行，得到结果后再调用 $done 结束脚本。
+
+1.2.0 (775) 
+- Fixes an issue that the system DNS server might not be updated when switching from one cellular service provider to another.
+
+1.2.0 (774) 
+- Fixes an issue on M series chip Mac when installing from TestFlight
+
+1.2.0 (773) 
+- 允许主应用进行延迟测试当处于热点开启状态时
+
+1.2.0 (772) 
+- 已缓存的远程资源可导出为格式化后的 snippet（如启用了解析器，则为解析器处理后再格式化的内容）；「滑动对应资源列表」-「点击放大镜」-「右上角分享按钮」。
+- 主功能键转速会受当前上传下载速度影响。
+
+1.2.0 (771) 
+- 对基于 TLS 的代理协议增加两个选项 tls-no-session-ticket 及 tls-no-session-reuse 供某些用户在极特殊的场景或网络环境下配置。
+- 默认 TLS session ticket 及 TLS session reuse 均为启用状态，如需禁用对应特性可设置 tls-no-session-ticket=true 与 tls-no-session-reuse=true。 详细说明可参见应用内示例配置。
 
 
 1.2.0 (770) 
