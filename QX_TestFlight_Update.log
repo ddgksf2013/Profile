@@ -1,14 +1,22 @@
-####################################################################################################
+################################
 #日志名称：  QuantumultX TF Update Log
-#日志作者：  @Cuttlefish, @kyle, @ddgksf2013
-#更新时间：  2022-12-21
+#日志作者：  @ddgksf2013, @kyle,
+#更新时间：  2023-04-22
 #微信账号：  公众号墨鱼手记
 #使用说明：  可全局搜索🔍关键词
 #后续更新：  随Testflight陆续更新…
 #通知频道：  https://t.me/ddgksf2021
 #日志提醒：  开发者没版本或撤包，无法获得更新日志以 No Changelog 代替
 #日志地址：  https://github.com/ddgksf2013/Profile/raw/master/QX_TestFlight_Update.log
-##################################################################################################
+################################
+
+
+1.4.0 (782) 
+- Fixes an issue that the "bodyBytes (binary)" of HTTP(S) request might be empty for rewrite (script-analyze-echo-response) if the request body is not a string.
+
+1.3.0 (781) 
+- Adds an option "enhanced_compatibility_ssid_list" in [general] section, this ssid specific option will be considered only when the global option 「Enhanced Compatibility」is Off.
+- Other minor changes.
 
 
 1.2.0 (776) 
