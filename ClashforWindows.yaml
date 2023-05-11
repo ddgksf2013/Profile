@@ -3,12 +3,12 @@
 # @TgChannel         𝐡𝐭𝐭𝐩𝐬://𝐭.𝐦𝐞/𝐝𝐝𝐠𝐤𝐬𝐟𝟐𝟎𝟐𝟏
 # @WechatID          公众号墨鱼手记
 # @Feedback          💡请通过邮件反馈问题[其它方式一概无视]：𝐝𝐝𝐠𝐤𝐬𝐟𝟐𝟎𝟏𝟑@𝟏𝟔𝟑.𝐜𝐨𝐦 💡
-# @UpdateTime        2023/04/20 21:50 UTC/GMT +8
+# @UpdateTime        2023/05/11 22:10 UTC/GMT +8
 # @Function          支持手动选择、自动测速、广告屏蔽、兜底分流、按国家分组节点等等   
 # @ClashDownload     https://github.com/Fndroid/clash_for_windows_pkg/releases
 # @Thanks            @blackmatrix7, @Fndroid, @Anti
 # @Attention         𝐏𝐥𝐞𝐚𝐬𝐞 𝐮𝐬𝐞 𝐭𝐡𝐞 𝐥𝐚𝐭𝐞𝐬𝐭 𝐯𝐞𝐫𝐬𝐢𝐨𝐧 𝐨𝐟 𝐂𝐥𝐚𝐬𝐡𝐟𝐨𝐫𝐖𝐢𝐧𝐝𝐨𝐰𝐬
-# @ConfigVersion     1.0.7 
+# @ConfigVersion     1.0.8 
 
 port: 7890
 socks-port: 7891
@@ -191,6 +191,10 @@ rule-providers:
     <<: *a6
     url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/GitHub/GitHub.yaml
     path: ./ruleset/Github.yaml
+  Microsoft:
+    <<: *a6
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Microsoft/Microsoft.yaml
+    path: ./ruleset/Microsoft.yaml
   Google:
     <<: *a6
     url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Google/Google.yaml
@@ -232,6 +236,7 @@ rules:
   - RULE-SET,GlobalMedia,🎬 国际媒体
   - RULE-SET,Apple,🍎 苹果服务
   - RULE-SET,Github,🌏 全球加速
+  - RULE-SET,Microsoft, 🌏 全球加速
   - RULE-SET,Google,🌌 谷歌服务
   - RULE-SET,Telegram,📟 电报消息
   - RULE-SET,Twitter,🌏 全球加速
