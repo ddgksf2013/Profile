@@ -124,12 +124,12 @@ proxy-groups:
       - DIRECT
       - 🇭🇰 香港节点
       - 🇨🇳 台湾节点
-  - name: 🎬 国际媒体
-    <<: *a3
   - name: 🤖 OpenAi
     type: select
     proxies:
       - 🇺🇲 美国节点
+  - name: 🎬 国际媒体
+    <<: *a3
   - name: 🌌 谷歌服务
     <<: *a3
   - name: 📟 电报消息
@@ -233,6 +233,8 @@ rules:
   - RULE-SET,Lan,DIRECT
   - RULE-SET,Download,DIRECT
   - RULE-SET,Ad,🆎 AdBlock
+  - RULE-SET,OpenAi,🤖 OpenAi
+  - RULE-SET,BiliBili,📺 哔哩哔哩
   - RULE-SET,GlobalMedia,🎬 国际媒体
   - RULE-SET,Apple,🍎 苹果服务
   - RULE-SET,Github,🌏 全球加速
@@ -240,7 +242,6 @@ rules:
   - RULE-SET,Google,🌌 谷歌服务
   - RULE-SET,Telegram,📟 电报消息
   - RULE-SET,Twitter,🌏 全球加速
-  - RULE-SET,BiliBili,📺 哔哩哔哩
   - RULE-SET,Game,🎮 游戏平台
   - RULE-SET,ProxyLite,🌏 全球加速
   - RULE-SET,ChinaIP,DIRECT
