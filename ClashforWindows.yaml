@@ -3,12 +3,12 @@
 # @TgChannel         𝐡𝐭𝐭𝐩𝐬://𝐭.𝐦𝐞/𝐝𝐝𝐠𝐤𝐬𝐟𝟐𝟎𝟐𝟏
 # @WechatID          公众号墨鱼手记
 # @Feedback          💡请通过邮件反馈问题[其它方式一概无视]：𝐝𝐝𝐠𝐤𝐬𝐟𝟐𝟎𝟏𝟑@𝟏𝟔𝟑.𝐜𝐨𝐦 💡
-# @UpdateTime        2023/05/11 22:10 UTC/GMT +8
+# @UpdateTime        2023/05/24 22:10 UTC/GMT +8
 # @Function          支持手动选择、自动测速、广告屏蔽、兜底分流、按国家分组节点等等   
 # @ClashDownload     https://github.com/Fndroid/clash_for_windows_pkg/releases
 # @Thanks            @blackmatrix7, @Fndroid, @Anti
 # @Attention         𝐏𝐥𝐞𝐚𝐬𝐞 𝐮𝐬𝐞 𝐭𝐡𝐞 𝐥𝐚𝐭𝐞𝐬𝐭 𝐯𝐞𝐫𝐬𝐢𝐨𝐧 𝐨𝐟 𝐂𝐥𝐚𝐬𝐡𝐟𝐨𝐫𝐖𝐢𝐧𝐝𝐨𝐰𝐬
-# @ConfigVersion     1.0.8 
+# @ConfigVersion     1.0.9
 
 port: 7890
 socks-port: 7891
@@ -179,6 +179,14 @@ rule-providers:
     <<: *a5
     url: https://anti-ad.net/clash.yaml
     path: ./ruleset/anti-ad-clash.yaml
+  OpenAi:
+    <<: *a6
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/OpenAI/OpenAI.yaml
+    path: ./ruleset/OpenAi.yaml
+  BiliBili:
+    <<: *a6
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/BiliBili/BiliBili.yaml
+    path: ./ruleset/BiliBili.yaml
   GlobalMedia:
     <<: *a6
     url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/GlobalMedia/GlobalMedia_Classical.yaml
@@ -203,18 +211,10 @@ rule-providers:
     <<: *a6
     url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Telegram/Telegram.yaml
     path: ./ruleset/Telegram.yaml
-  OpenAi:
-    <<: *a6
-    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/OpenAI/OpenAI.yaml
-    path: ./ruleset/OpenAi.yaml
   Twitter:
     <<: *a6
     url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Twitter/Twitter.yaml
     path: ./ruleset/Twitter.yaml
-  BiliBili:
-    <<: *a6
-    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/BiliBili/BiliBili.yaml
-    path: ./ruleset/BiliBili.yaml
   Game:
     <<: *a6
     url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Game/Game.yaml
