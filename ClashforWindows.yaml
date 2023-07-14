@@ -5,11 +5,11 @@
 # @WechatID          公众号墨鱼手记
 # @Feedback          💡请通过邮件反馈问题[其它方式一概无视]：𝐝𝐝𝐠𝐤𝐬𝐟𝟐𝟎𝟏𝟑@𝟏𝟔𝟑.𝐜𝐨𝐦 💡
 # @UpdateTime        2023/07/14 19:00 UTC/GMT +8
-# @Function          支持手动选择、自动测速、广告屏蔽、兜底分流、按国家分组节点等等   
+# @Function          支持手动选择、自动测速、广告屏蔽、兜底分流、按国家分组节点、多机场订阅等等   
 # @ClashDownload     https://github.com/Fndroid/clash_for_windows_pkg/releases
 # @Thanks            @blackmatrix7, @Fndroid, @Anti
 # @Attention         𝐏𝐥𝐞𝐚𝐬𝐞 𝐮𝐬𝐞 𝐭𝐡𝐞 𝐥𝐚𝐭𝐞𝐬𝐭 𝐯𝐞𝐫𝐬𝐢𝐨𝐧 𝐨𝐟 𝐂𝐥𝐚𝐬𝐡𝐟𝐨𝐫𝐖𝐢𝐧𝐝𝐨𝐰𝐬
-# @ConfigVersion     1.0.16
+# @ConfigVersion     1.0.17
 #==========================================
 
 port: 7890           # HTTP 代理端口
