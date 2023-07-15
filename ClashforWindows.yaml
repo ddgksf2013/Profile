@@ -4,12 +4,12 @@
 # @TgChannel         𝐡𝐭𝐭𝐩𝐬://𝐭.𝐦𝐞/𝐝𝐝𝐠𝐤𝐬𝐟𝟐𝟎𝟐𝟏
 # @WechatID          公众号墨鱼手记
 # @Feedback          💡请通过邮件反馈问题[其它方式一概无视]：𝐝𝐝𝐠𝐤𝐬𝐟𝟐𝟎𝟏𝟑@𝟏𝟔𝟑.𝐜𝐨𝐦 💡
-# @UpdateTime        2023/07/14 19:00 UTC/GMT +8
+# @UpdateTime        2023/07/15 16:00 UTC/GMT +8
 # @Function          支持手动选择、自动测速、广告屏蔽、兜底分流、按国家分组节点、多机场订阅等等   
 # @ClashDownload     https://github.com/Fndroid/clash_for_windows_pkg/releases
 # @Thanks            @blackmatrix7, @Fndroid, @Anti
 # @Attention         𝐏𝐥𝐞𝐚𝐬𝐞 𝐮𝐬𝐞 𝐭𝐡𝐞 𝐥𝐚𝐭𝐞𝐬𝐭 𝐯𝐞𝐫𝐬𝐢𝐨𝐧 𝐨𝐟 𝐂𝐥𝐚𝐬𝐡𝐟𝐨𝐫𝐖𝐢𝐧𝐝𝐨𝐰𝐬
-# @ConfigVersion     1.0.17
+# @ConfigVersion     1.0.18
 #==========================================
 
 port: 7890           # HTTP 代理端口
@@ -69,9 +69,9 @@ i:    &a7 {type: http,     behavior: ipcidr,    interval: 86400}
 proxy-providers:
   Subscribe:
     <<: *a1
-    url: 手动填写，格式参考如下（两种方式请自选）
-    # URL后面填写格式1: 直接填写你的机场Clash订阅[单一订阅][推荐此种方式，避免订阅泄露]
-    # URL后面填写格式2：https://api.nexconvert.com/sub?target=clash&url=请手动填入你的订阅(多机场订阅用|分割即可)&emoji=true&list=true&new_name=true&udp=false
+    url: https://t.me/ddgksf2021.yaml
+    # URL后面填写格式1[单一订阅]: 直接填写你的机场Clash订阅[推荐此种方式，避免订阅泄露]
+    # URL后面填写格式2[多个订阅]：https://api.nexconvert.com/sub?target=clash&url=请手动填入你的订阅(多机场订阅用|分割即可)&emoji=true&list=true&new_name=true&udp=false
     path: ./proxy_providers/tmp.yaml
     
 proxies: null
