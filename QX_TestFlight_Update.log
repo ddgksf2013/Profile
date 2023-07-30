@@ -1,7 +1,7 @@
 ################################
 #日志名称：  QuantumultX TF Update Log
 #日志作者：  @ddgksf2013, @kyle,
-#更新时间：  2023-04-22
+#更新时间：  2023-07-30
 #微信账号：  公众号墨鱼手记
 #使用说明：  可全局搜索🔍关键词
 #后续更新：  随Testflight陆续更新…
@@ -10,6 +10,9 @@
 #日志地址：  https://github.com/ddgksf2013/Profile/raw/master/QX_TestFlight_Update.log
 ################################
 
+
+1.4.0 (784) 
+- When 「Quantumult X Tunnel」 failed to post media notification due to system issues, the notification will be reposted without the media part.
 
 1.4.0 (782) 
 - Fixes an issue that the "bodyBytes (binary)" of HTTP(S) request might be empty for rewrite (script-analyze-echo-response) if the request body is not a string.
