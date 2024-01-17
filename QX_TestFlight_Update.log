@@ -1,7 +1,7 @@
 ################################
 #日志名称：  QuantumultX TF Update Log
-#日志作者：  @ddgksf2013, @kyle,
-#更新时间：  2023-07-30
+#日志作者：  @ddgksf2013, @kyle
+#更新时间：  2024-01-17
 #微信账号：  公众号墨鱼手记
 #使用说明：  可全局搜索🔍关键词
 #后续更新：  随Testflight陆续更新…
@@ -10,6 +10,77 @@
 #日志地址：  https://github.com/ddgksf2013/Profile/raw/master/QX_TestFlight_Update.log
 ################################
 
+1.5.0 (821) 
+- Supports VLESS proxy protocol.
+
+1.5.0 (820) 
+- Fixes a crash caused by some currupted customized MMDB databases.
+
+1.5.0 (819)
+- When VMess password user set is not a UUID string, Quantumult X will see it as a name-based UUID and will convert it to UUID(v5) automatically using the empty UUID name space to be consistent with the related xray-core project updates.
+
+1.5.0 (818) 
+- Fixes MitM compatibility issues for macOS Firefox browser.
+
+1.5.0 (816) 
+- The device local IP address can be used for SSID related features on wired network.
+
+1.5.0 (815)
+- Fixes a crash on macOS.
+
+1.5.0 (814)
+- Bug fixes
+
+1.5.0 (811)
+- Bug fixes
+
+1.4.0 (809) 
+- Beta test
+
+1.4.0 (808)
+- Fixes an issue related to response-body rewrite
+
+1.4.0 (807) 
+- 修复使用 SSR 混淆协议在某些情况下会崩溃的问题
+
+1.4.0 (806) 
+- macOS
+* 适配部分界面
+
+1.4.0 (805) 
+- macOS & tvOS
+* 修复更改（Quantumult X Tunnel SS 服务端）监听端口无效的问题
+
+1.4.0 (804)
+- macOS
+* 在 macOS 上支持 SSID 相关功能
+
+1.4.0 (803) 
+- Fixes a crash
+
+1.4.0 (801) 
+- macOS & tvOS
+* Quantumult X Tunnel 可作为一个 shadowsocks 服务端（aes-128-gcm），客户端可选择使用 http 混淆，或不使用混淆，以方便某些用户在外网通过加密访问内网（用户可自行配置路由器端口转发）
+* Quantumult X Tunnel 提供的 shadowsocks 服务端同时监听在本机 IPv4 与 IPv6 且仅提供 TCP 传输
+* 客户端节点配置示例（外网访问请设置为外网 IP 或自行配置域名）：
+shadowsocks=192.168.10.22:8889, method=aes-128-gcm, password=pwd, obfs=http, obfs-host=baidu.com, udp-relay=false, tag=Apple TV
+shadowsocks=192.168.10.23:8889, method=aes-128-gcm, password=pwd, udp-relay=false, tag=Mac
+
+注：
+当 Apple TV 使用有线连接时，shadowsocks 服务端能同时接收的 TCP 连接数极少（大概 40 个左右的连接），超过该数量，系统会断开所有已建立的连接以及拒绝所有新的连接。疑似 tvOS 17.0 测试版 bug（「Apple TV 4K 1 代」及「Apple TV 4K 3 代」）均有该现象。
+当 Mac 使用有线连接或无线连接，以及当 Apple TV 使用无线连接时，均表现正常。
+
+1.4.0 (800)
+- macOS
+* 修复一处崩溃
+
+1.4.0 (799)
+- macOS
+* 状态栏增加节点选取等操作
+
+1.4.0 (798) 
+- macOS
+* 增加状态栏操作
 
 1.4.0 (784) 
 - When 「Quantumult X Tunnel」 failed to post media notification due to system issues, the notification will be reposted without the media part.
@@ -21,6 +92,8 @@
 - Adds an option "enhanced_compatibility_ssid_list" in [general] section, this ssid specific option will be considered only when the global option 「Enhanced Compatibility」is Off.
 - Other minor changes.
 
+1.4.0 (797)
+- iOS 及 Mac 版本 Quantumult X 增加共享 iCloud Drive 中的配置文件到 Apple TV
 
 1.2.0 (776) 
 - 应用主页增加显示当前活跃（还未调用 $done）的 JS 数量。如因脚本条件判断不全或脚本未正确处理异常导致 $done 未调用而使 JS 环境长时间活跃，可点击强制结束以释放内存等相关资源。
