@@ -1,7 +1,8 @@
 ################################
 #日志名称：  QuantumultX TF Update Log
-#日志作者：  @ddgksf2013, @kyle
-#更新时间：  2024-01-17
+#日志作者：  @ddgksf2013
+#贡献作者    @kyle
+#更新时间：  2024-01-19
 #微信账号：  公众号墨鱼手记
 #使用说明：  可全局搜索🔍关键词
 #后续更新：  随Testflight陆续更新…
@@ -9,6 +10,20 @@
 #日志提醒：  开发者没版本或撤包，无法获得更新日志以 No Changelog 代替
 #日志地址：  https://github.com/ddgksf2013/Profile/raw/master/QX_TestFlight_Update.log
 ################################
+
+
+1.5.0 (824)
+- If the URL of request has been modified by a request related rewrite, 2 URLs (original and modified) will be shown in the HTTP request detail view.
+- From this build:
+1、The JS context of script-request-body will also be created even if the HTTP(S) request has no body, ealry builds just skipped the creation of JS context.
+2、The JS context of script-response-body will also be created even if the HTTP(S) response has no body, ealry builds just skipped the creation of JS context.
+3、If the script-request-header or script-request-body (request related script rewrite) returns (by calling $done) a dictionary inlcuding key "status" (like {"status" : @"HTTP/1.1 200 OK"}), Quantumult X will see the returned result as direct response not a modified request, in this case this action is more like the script-echo-response or script-analyze-echo-response.
+
+1.5.0 (823)
+- From this build, the modified HTTP(S) request URL and headers instead of the original HTTP(S) request URL and headers will be used for searching HTTP(S) response related rewrites if the request has been modified. In most cases you won't notice a thing.
+
+1.5.0 (822)
+- Fixes an issue that some fields ("$request.method", "$request.path" and "$request.scheme") are missing in script-echo-response rewrite.
 
 1.5.0 (821) 
 - Supports VLESS proxy protocol.
