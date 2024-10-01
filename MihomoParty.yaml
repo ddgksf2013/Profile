@@ -9,7 +9,7 @@
 # @mihomo-party      https://github.com/mihomo-party-org/mihomo-party/releases
 # @Thanks            @blackmatrix7, @Fndroid, @Anti, @Orz-3, @Koolson
 # @Attention         𝐏𝐥𝐞𝐚𝐬𝐞 𝐮𝐬𝐞 𝐭𝐡𝐞 𝐥𝐚𝐭𝐞𝐬𝐭 𝐯𝐞𝐫𝐬𝐢𝐨𝐧 𝐨𝐟 𝐂𝐥𝐚𝐬𝐡𝐟𝐨𝐫𝐖𝐢𝐧𝐝𝐨𝐰𝐬
-# @ConfigVersion     1.0.6
+# @ConfigVersion     1.0.7
 #==========================================
 
 proxy-groups:
@@ -37,23 +37,23 @@ proxy-groups:
 
 # 分流规则 
 rule-providers:
-  Direct:      {behavior: classical, interval: 86400, format: text, type: http, url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Direct/Direct.yaml ,                      path: ./ruleset/Direct.yaml       }
-  Lan:         {behavior: classical, interval: 86400, format: text, type: http, url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Lan/Lan.yaml ,                            path: ./ruleset/Lan.yaml          }
-  Download:    {behavior: classical, interval: 86400, format: text, type: http, url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Download/Download.yaml ,                  path: ./ruleset/Download.yaml     }
+  Direct:      {behavior: classical, interval: 86400, format: yaml, type: http, url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Direct/Direct.yaml ,                      path: ./ruleset/Direct.yaml       }
+  Lan:         {behavior: classical, interval: 86400, format: yaml, type: http, url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Lan/Lan.yaml ,                            path: ./ruleset/Lan.yaml          }
+  Download:    {behavior: classical, interval: 86400, format: yaml, type: http, url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Download/Download.yaml ,                  path: ./ruleset/Download.yaml     }
   Ad:          {behavior: classical, interval: 86400, format: text, type: http, url: https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanAD.list ,                                                path: ./ruleset/anti-ad-clash.yaml}
-  OpenAi:      {behavior: classical, interval: 86400, format: text, type: http, url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/OpenAI/OpenAI.yaml ,                      path: ./ruleset/OpenAi.yaml       }
-  BiliBili:    {behavior: classical, interval: 86400, format: text, type: http, url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/BiliBili/BiliBili.yaml ,                  path: ./ruleset/BiliBili.yaml     }
-  Bahamut:     {behavior: classical, interval: 86400, format: text, type: http, url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Bahamut/Bahamut.yaml ,                    path: ./ruleset/Bahamut.yaml      } 
-  GlobalMedia: {behavior: classical, interval: 86400, format: text, type: http, url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/GlobalMedia/GlobalMedia_Classical.yaml ,  path: ./ruleset/GlobalMedia.yaml  }
-  Apple:       {behavior: classical, interval: 86400, format: text, type: http, url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Apple/Apple_Classical.yaml ,              path: ./ruleset/Apple.yaml        }
-  Github:      {behavior: classical, interval: 86400, format: text, type: http, url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/GitHub/GitHub.yaml ,                      path: ./ruleset/Github.yaml       }
-  Microsoft:   {behavior: classical, interval: 86400, format: text, type: http, url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Microsoft/Microsoft.yaml ,                path: ./ruleset/Microsoft.yaml    }
-  Google:      {behavior: classical, interval: 86400, format: text, type: http, url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Google/Google.yaml ,                      path: ./ruleset/Google.yaml       }
-  Telegram:    {behavior: classical, interval: 86400, format: text, type: http, url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Telegram/Telegram.yaml ,                  path: ./ruleset/Telegram.yaml     }
-  Twitter:     {behavior: classical, interval: 86400, format: text, type: http, url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Twitter/Twitter.yaml ,                    path: ./ruleset/Twitter.yaml      }
-  Game:        {behavior: classical, interval: 86400, format: text, type: http, url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Game/Game.yaml ,                          path: ./ruleset/Game.yaml         }
-  ChinaIP:     {behavior: ipcidr,    interval: 86400, format: text, type: http, url: https://cdn.jsdelivr.net/gh/soffchen/GeoIP2-CN@release/clash-rule-provider.yml ,                                     path: ./ruleset/ChinaIP.yaml      }
-  ProxyLite:   {behavior: classical, interval: 86400, format: text, type: http, url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/ProxyLite/ProxyLite.yaml ,                path: ./ruleset/ProxyLite.yaml    }
+  OpenAi:      {behavior: classical, interval: 86400, format: yaml, type: http, url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/OpenAI/OpenAI.yaml ,                      path: ./ruleset/OpenAi.yaml       }
+  BiliBili:    {behavior: classical, interval: 86400, format: yaml, type: http, url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/BiliBili/BiliBili.yaml ,                  path: ./ruleset/BiliBili.yaml     }
+  Bahamut:     {behavior: classical, interval: 86400, format: yaml, type: http, url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Bahamut/Bahamut.yaml ,                    path: ./ruleset/Bahamut.yaml      } 
+  GlobalMedia: {behavior: classical, interval: 86400, format: yaml, type: http, url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/GlobalMedia/GlobalMedia_Classical.yaml ,  path: ./ruleset/GlobalMedia.yaml  }
+  Apple:       {behavior: classical, interval: 86400, format: yaml, type: http, url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Apple/Apple_Classical.yaml ,              path: ./ruleset/Apple.yaml        }
+  Github:      {behavior: classical, interval: 86400, format: yaml, type: http, url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/GitHub/GitHub.yaml ,                      path: ./ruleset/Github.yaml       }
+  Microsoft:   {behavior: classical, interval: 86400, format: yaml, type: http, url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Microsoft/Microsoft.yaml ,                path: ./ruleset/Microsoft.yaml    }
+  Google:      {behavior: classical, interval: 86400, format: yaml, type: http, url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Google/Google.yaml ,                      path: ./ruleset/Google.yaml       }
+  Telegram:    {behavior: classical, interval: 86400, format: yaml, type: http, url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Telegram/Telegram.yaml ,                  path: ./ruleset/Telegram.yaml     }
+  Twitter:     {behavior: classical, interval: 86400, format: yaml, type: http, url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Twitter/Twitter.yaml ,                    path: ./ruleset/Twitter.yaml      }
+  Game:        {behavior: classical, interval: 86400, format: yaml, type: http, url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Game/Game.yaml ,                          path: ./ruleset/Game.yaml         }
+  ChinaIP:     {behavior: ipcidr,    interval: 86400, format: yaml, type: http, url: https://cdn.jsdelivr.net/gh/soffchen/GeoIP2-CN@release/clash-rule-provider.yml ,                                     path: ./ruleset/ChinaIP.yaml      }
+  ProxyLite:   {behavior: classical, interval: 86400, format: yaml, type: http, url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/ProxyLite/ProxyLite.yaml ,                path: ./ruleset/ProxyLite.yaml    }
   
 # 分流Policy 
 rules:
