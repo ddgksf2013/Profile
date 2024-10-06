@@ -9,7 +9,7 @@
 # @mihomo-party      https://github.com/mihomo-party-org/mihomo-party/releases
 # @howtouse          主界面添加本配置[覆写]，然后使用内置的[SubStore]添加机场，之后去[订阅管理]，在配置的[编辑信息]中绑定机场订阅，开启系统代理即可使用
 # @Thanks            @blackmatrix7, @Fndroid, @Anti, @Orz-3, @Koolson, @soffchen, @ACL4SSR
-# @ConfigVersion     1.0.12
+# @ConfigVersion     1.0.13
 #==========================================
 
 proxy-groups:
@@ -37,7 +37,7 @@ proxy-groups:
 
 # 分流规则 
 rule-providers:
-  AdBlock:     {behavior: domain,    interval: 86400, format: text, type: http, url: https://ghp.ci/https://raw.githubusercontent.com/Cats-Team/AdRules/main/adrules_domainset.txt ,                                                path: ./ruleset/anti-ad-clash.yaml}
+  AdBlock:     {behavior: domain,    interval: 86400, format: text, type: http, url: https://ghp.ci/https://raw.githubusercontent.com/Cats-Team/AdRules/main/adrules_domainset.txt ,                                           path: ./ruleset/anti-ad-clash.txt }
   OpenAi:      {behavior: classical, interval: 86400, format: yaml, type: http, url: https://ghp.ci/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml ,                      path: ./ruleset/OpenAi.yaml       }
   BiliBili:    {behavior: classical, interval: 86400, format: yaml, type: http, url: https://ghp.ci/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BiliBili/BiliBili.yaml ,                  path: ./ruleset/BiliBili.yaml     }
   Bahamut:     {behavior: classical, interval: 86400, format: yaml, type: http, url: https://ghp.ci/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bahamut/Bahamut.yaml ,                    path: ./ruleset/Bahamut.yaml      } 
