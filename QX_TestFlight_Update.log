@@ -2,8 +2,8 @@
 #日志名称：  QuantumultX TF Update Log
 #日志作者：  @ddgksf2013
 #贡献作者    @kyle
-#更新时间：  2024-01-19
-#微信账号：  公众号墨鱼手记
+#更新时间：  2025-05-17
+#微信账号：  墨鱼手记
 #使用说明：  可全局搜索🔍关键词
 #后续更新：  随Testflight陆续更新…
 #通知频道：  https://t.me/ddgksf2021
@@ -11,6 +11,67 @@
 #日志地址：  https://github.com/ddgksf2013/Profile/raw/master/QX_TestFlight_Update.log
 ################################
 
+1.5.2 (849) 
+- Optimized the memory footprint of jq based rewrite to improve user experience on iOS versions prior to 15.0
+- Other minor improvements
+
+1.5.2 (848) 
+- Fixes a potential crash related to jq based rewrite.
+
+1.5.2 (847) 
+- Fixes a potential crash related to jq based rewrite.
+
+1.5.2 (846) 
+- The udp_drop_list now can contain protocols like STUN, QUIC to block related packets.
+udp_drop_list = 80, STUN, QUIC
+
+1.5.2 (845)
+- Adds "jsonjq-request-body" and "jsonjq-response-body" for rewrite to handle JSON body modification using jqlang (https://github.com/jqlang/jq), please view sample configuraiton in app for details.
+
+1.5.2 (844) 
+- To improve usability, rewrite rule snippets can now optional include filter rules.
+sample rewrite rule snippets:
+^http://example\.com/resource2/ url 302 http://example.com/new-resource2/
+host, example.com, proxy
+
+1.5.1 (843) 
+- Release Candidate 2.
+
+1.5.1 (842) 
+- Fixes an issue related to MitM.
+- Release Candidate 1.
+
+1.5.1 (841) 
+- Fixes an issue related to MitM.
+- Release Candidate 1
+
+1.5.1 (840) 
+- Add the udp-over-tcp=sp.v2 directive to enable support for the version 2 UDP over TCP shadowsocks server deplopyed by sing-box.
+
+1.5.1 (839) 
+- Add support for UDP over TCP (udp-relay=true, udp-over-tcp=sp.v1) for shadowsocks deployed by Xray, please refer to the sample configuration in the app for more details.
+注（shadowsocks）：
+udp-relay=true, (udp-over-tcp=false) 使用 UDP 转发 UDP
+udp-relay=true, udp-over-tcp=true 使用 TCP 转发 UDP，服务端使用 SSR python 版，不支持 2022-blake3 系列。
+
+新增如下：
+udp-relay=true, udp-over-tcp=sp.v1 使用 TCP 转发 UDP，服务端使用 Xray，支持 2022-blake3 系列。
+
+1.5.1 (838) 
+- Fixes a UDP related issue introduced in build 836.
+
+1.5.1 (837)
+- Supports 2022-blake3-aes-128-gcm and
+2022-blake3-aes-256-gcm for
+shadowsocks.
+- Supports SIP023 Shadowsocks 2022
+Extensible Identity Headers.
+
+1.5.1 (836) 
+- Supports SIP023 Shadowsocks 2022 Extensible Identity Headers.
+
+1.5.1 (835) 
+- Supports 2022-blake3-aes-128-gcm and 2022-blake3-aes-256-gcm for shadowsocks, please view sample configuraiton in app for details.
 
 1.5.0 (824)
 - If the URL of request has been modified by a request related rewrite, 2 URLs (original and modified) will be shown in the HTTP request detail view.
